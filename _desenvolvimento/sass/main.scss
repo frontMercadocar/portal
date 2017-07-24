@@ -1,0 +1,180 @@
+@import 'reset';
+
+body{
+    background: white;
+    .container-middle{
+        max-width: 1300px;
+        min-width: 960px;
+        padding: 5px;
+        position: relative;
+        margin: 0 auto;
+        .content-header{
+            h1{
+                position: relative;
+                width: 175px;
+                height: 35px;
+                display: inline-block;
+            }
+            .content-header-information{
+                display: inline-block;
+                .ul-header-information{
+                    position: relative;
+                    padding: 0;
+                    top: 6px;
+                    li{
+                        display: inline-block;
+                        width: 25%;
+                        margin: 3px 0;
+                        &:nth-child(3){
+                            position: relative;
+                            top: 10px;
+                        }                        
+                    }
+                }
+            }
+            .content-search{
+                display: inline-block;
+            }
+            .login-user{
+                display: inline-block;
+                position: absolute;
+                top: 40px;
+                right: 0px;
+            }
+        }
+        .content-menu{
+            display: block;
+            position: relative;
+            z-index: 1;
+            .ul-menu{
+                display: block;
+                padding: 0;
+                li{
+                    display: inline-block;
+                    padding: 5px 15px;
+                    position: relative;
+                    cursor: pointer;
+                    &:after{
+                        content: '|';
+                        display: inline-block;                        
+                        position: absolute;
+                        right: -4px;
+                        color: #ccc;
+                    }
+                    &:last-child{
+                        &:after{
+                            display: none;
+                        }
+                    }
+                    &:hover{
+                        background: #ddd;
+                    }                 
+                    ul{
+                        display: none;
+                        position: absolute;
+                        padding: 0;
+                        background: #ddd;
+                        
+                        li{
+                            display: block;
+                            &:after{
+                                display: none;
+                            }
+                            ul{
+                                width: 190px;
+                                top: 0;
+                                right: -190px;
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            }            
+        }
+        .dynamic-content{
+            position: relative;
+            top: 20px;
+        }
+    }
+}
+
+.ul-menu li:hover > ul{
+    display: block !important;
+}
+
+
+/*************************************************************************** HOME*/
+
+
+.content-home{
+    .content-home-left{
+        float: left;
+        width: 15%;
+        padding: 10px;
+        .component-oque-ha-de-novo, .component-fique-ligado{
+            width: 130px;
+            margin-bottom: 10px;
+            title{
+                display: block;
+            }
+        }
+    }
+    .content-home-right{
+        float: right;
+        width: 20%;
+        padding: 10px;
+        .content-enquete{
+            label{
+                display: block;
+                margin-bottom: 5px;
+            }
+        }
+    }
+    .content-home-center{
+        display: block;
+        margin: 0 20% 0 15%;
+        padding: 10px;
+    }
+    .lightbox{
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        bottom: 0;
+        background: rgba(0,0,0,0.8);
+        z-index: 10;
+        .content-lightbox{
+            position: absolute;
+            top: 50%;
+            bottom: 50%;
+            text-align: center;
+            display: block;
+            width: 100%;
+            .content-lightbox-info{
+                padding: 10px;
+                background: #fff;
+                display: inline-block;
+                border-radius: 4px;
+                position: relative;
+                .close{
+                    position: absolute;
+                    top: -10px;
+                    right: -10px;
+                    border-radius: 60px;
+                    background: white;
+                    padding: 7px 10px;
+                    font-size: 12px;
+                    font-weight: 800;
+                    box-shadow: 0 5px 8px #000;
+                    cursor: pointer;
+                }
+            } 
+        }
+    }
+    .both{
+        clear: both;
+    }
+}
+
+
