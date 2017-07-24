@@ -5,7 +5,8 @@ define(['app'], function (app) {
         
         $scope.textPage = 'Página D.C.C';
         //console.log($scope.textPage);
-                       
+     
+
     });
 });
 

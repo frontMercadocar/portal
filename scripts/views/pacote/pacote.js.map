@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../../_desenvolvimento/scripts/views/pacote/pacote.js"],"names":["define","app","controller","$scope","$rootScope","textPage","$","append","slick"],"mappings":"AAAA,YAEAA,SAAQ,OAAQ,SAAUC,KACtBA,IAAIC,WAAW,aAAc,SAAUC,OAAQC,YAE3CD,OAAOE,SAAW,SAElBC,EAAE,eAAeC,OAAO,8CAGxBD,EAAE,gBAAgBE","file":"pacote.js"}

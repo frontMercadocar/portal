@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"> 
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta http-equiv="Expires" content="0">
+
+    <script>
+        document.write('<base href="http://192.168.101.23:3000/portal/" />');
+    </script>
     
     <!-- <link rel="icon" href="favicon.ico"> -->
     <link rel="stylesheet" href="content/css/main.css" type="text/css" />
@@ -15,10 +19,19 @@
     </style>
 
     <title>Portal</title>    
-    <base href="/portal/">
+    <base href="/portal/"> 
     </head>
 
     <body>
+        <div class="lightbox">
+            <div class="content-lightbox">
+                <div class="content-lightbox-info">
+                    <bottom class="close" id="close" onclick="funcoes.metodos.close();">X</bottom>
+                    <p>oi</p>                
+                </div>            
+            </div>
+        </div>
+
         <div class="container-middle">
             <div ng-include="'views/header.html'"></div> 
             <div ng-view class="dynamic-content"></div>
@@ -26,14 +39,25 @@
 
         <script src="scripts/libs/jquery.min.js"></script>
         <script src="scripts/libs/jquery-ui.js"></script>
-        <script src="scripts/plugin/jquery.bxslider.js"></script>
-        
+        <script src="scripts/plugin/jquery.bxslider.js"></script>        
 
         <script src="scripts/header.js"></script> 
     
         <script data-main="scripts/main.js" src="scripts/libs/require.js"></script>
-
         
+        <script>
+            var funcoes = {};
+
+            funcoes.metodos = {
+                lightbox: function(){
+                    $('.lightbox').fadeIn(800);
+                },
+                close: function(){
+                    $('.lightbox').fadeOut(800);
+                }
+            };
+
+        </script>        
 
         <script src="http://localhost:35729/livereload.js"></script>
     </body>

@@ -27,7 +27,12 @@ module.exports = function (grunt) {
                     noCache: true
                 },       
                 files: {
-                    'content/css/main.css': '_desenvolvimento/sass/main.scss'
+                    'content/css/main.css': '_desenvolvimento/sass/main.scss',
+                    'content/css/pacote.css': '_desenvolvimento/sass/pacote.scss',
+                    'content/css/conferencia_encomenda.css': '_desenvolvimento/sass/conferencia_encomenda.scss',
+                    'content/css/contagem_estoque.css': '_desenvolvimento/sass/contagem_estoque.scss',
+                    'content/css/inventario.css': '_desenvolvimento/sass/inventario.scss',
+                    'content/css/solucoes.css': '_desenvolvimento/sass/solucoes.scss'
                 }
             }     
         },
@@ -43,7 +48,12 @@ module.exports = function (grunt) {
                     'scripts/main.js': ['_desenvolvimento/scripts/main.js'],
                     'scripts/header.js': ['_desenvolvimento/scripts/header.js'],
                     'scripts/views/home/home.js': ['_desenvolvimento/scripts/views/home/home.js'],
-                    'scripts/views/dcc/dcc.js': ['_desenvolvimento/scripts/views/dcc/dcc.js']
+                    'scripts/views/dcc/dcc.js': ['_desenvolvimento/scripts/views/dcc/dcc.js'],
+                    'scripts/views/pacote/pacote.js': ['_desenvolvimento/scripts/views/pacote/pacote.js'],
+                    'scripts/views/conferencia_encomenda/conferencia_encomenda.js': ['_desenvolvimento/scripts/views/conferencia_encomenda/conferencia_encomenda.js'],
+                    'scripts/views/contagem_estoque/contagem_estoque.js': ['_desenvolvimento/scripts/views/contagem_estoque/contagem_estoque.js'],
+                    'scripts/views/inventario/inventario.js': ['_desenvolvimento/scripts/views/inventario/inventario.js'],
+                    'scripts/views/solucoes/solucoes.js': ['_desenvolvimento/scripts/views/solucoes/solucoes.js']
                 },
             }
         },

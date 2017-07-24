@@ -1,0 +1,9 @@
+{
+	"version": 3,
+	"file": "pacote.css",
+	"sources": [
+		"../../_desenvolvimento/sass/pacote.scss"
+	],
+	"names": [],
+	"mappings": ""
+}

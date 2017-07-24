@@ -1,8 +1,5 @@
 function mainController($scope, $http, $rootScope, $location){
-    
-    setTimeout(function(){
-        //SLIDERS
-        $('.single-item').slick(); 
+    setTimeout(function(){        
         //AUTOSUGGEST
         var availableTags = [
             "ActionScript",
@@ -31,14 +28,6 @@ function mainController($scope, $http, $rootScope, $location){
         $("#tags").autocomplete({
             source: availableTags
         });
-        //LOGIN
-        $("#login").click(function(){
-            $(".lightbox").fadeIn(800);
-        });
-        //CLOSE
-        $("#close").click(function(){
-            $(".lightbox").fadeOut(800);
-        });
-    }, 10);
-    
+        
+    }, 10);    
 }
