@@ -23,12 +23,17 @@ define(['angularAMD', 'angular-route'], function (angularAMD) {
             controller: 'DCCCtrl',
             controllerUrl: 'views/dcc/dcc'
         }))
-        .when("/estoque/:firstParameter", angularAMD.route({
+        .when("/pacote/:firstParameter", angularAMD.route({
+            templateUrl: 'views/conferencia_encomenda/index.html', 
+            controller: 'conferenciaEncomendaCtrl',
+            controllerUrl: 'views/conferencia_encomenda/conferencia_encomenda'
+        }))
+        .when("/pacote", angularAMD.route({
             templateUrl: 'views/pacote/index.html', 
             controller: 'PacoteCtrl',
             controllerUrl: 'views/pacote/pacote'
         }))
-        .when("/estoque/:firstParameter/conferencia_encomenda", angularAMD.route({
+        .when("/pacote/:firstParameter/conferencia_encomenda", angularAMD.route({
             templateUrl: 'views/conferencia_encomenda/index.html', 
             controller: 'conferenciaEncomendaCtrl',
             controllerUrl: 'views/conferencia_encomenda/conferencia_encomenda'
@@ -47,6 +52,16 @@ define(['angularAMD', 'angular-route'], function (angularAMD) {
             templateUrl: 'views/solucoes/index.html', 
             controller: 'SolucoesCtrl',
             controllerUrl: 'views/solucoes/solucoes'
+        }))
+        .when("/oquehadenovo", angularAMD.route({
+            templateUrl: 'views/oquehadenovo/index.html', 
+            controller: 'OqueHadeNovoCtrl',
+            controllerUrl: 'views/oquehadenovo/oquehadenovo'
+        }))
+        .when("/fiqueligado", angularAMD.route({
+            templateUrl: 'views/fiqueligado/index.html', 
+            controller: 'FiqueLigadoCtrl',
+            controllerUrl: 'views/fiqueligado/fiqueligado'
         }))
         .otherwise({
             redirectTo: '/home'

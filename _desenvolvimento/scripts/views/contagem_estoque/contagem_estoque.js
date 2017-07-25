@@ -5,7 +5,7 @@ define(['app'], function (app) {
         
         $scope.textPage = 'Contagem Estoque';
         
-        $('.breadcrumb').append('<a href="home">Home</a> / Estoque / <a href="pacote">Pacote</a> / Contagem Estoque');           
+        $('.breadcrumb').append('<a href="home">Home</a> / Estoque / Inventário / Contar o Estoque');           
                        
     });
 });

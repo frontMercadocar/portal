@@ -32,7 +32,9 @@ module.exports = function (grunt) {
                     'content/css/conferencia_encomenda.css': '_desenvolvimento/sass/conferencia_encomenda.scss',
                     'content/css/contagem_estoque.css': '_desenvolvimento/sass/contagem_estoque.scss',
                     'content/css/inventario.css': '_desenvolvimento/sass/inventario.scss',
-                    'content/css/solucoes.css': '_desenvolvimento/sass/solucoes.scss'
+                    'content/css/solucoes.css': '_desenvolvimento/sass/solucoes.scss',
+                    'content/css/oquehadenovo.css': '_desenvolvimento/sass/oquehadenovo.scss',
+                    'content/css/fiqueligado.css': '_desenvolvimento/sass/fiqueligado.scss'
                 }
             }     
         },
@@ -53,7 +55,9 @@ module.exports = function (grunt) {
                     'scripts/views/conferencia_encomenda/conferencia_encomenda.js': ['_desenvolvimento/scripts/views/conferencia_encomenda/conferencia_encomenda.js'],
                     'scripts/views/contagem_estoque/contagem_estoque.js': ['_desenvolvimento/scripts/views/contagem_estoque/contagem_estoque.js'],
                     'scripts/views/inventario/inventario.js': ['_desenvolvimento/scripts/views/inventario/inventario.js'],
-                    'scripts/views/solucoes/solucoes.js': ['_desenvolvimento/scripts/views/solucoes/solucoes.js']
+                    'scripts/views/solucoes/solucoes.js': ['_desenvolvimento/scripts/views/solucoes/solucoes.js'],
+                    'scripts/views/oquehadenovo/oquehadenovo.js': ['_desenvolvimento/scripts/views/oquehadenovo/oquehadenovo.js'],
+                    'scripts/views/fiqueligado/fiqueligado.js': ['_desenvolvimento/scripts/views/fiqueligado/fiqueligado.js']
                 },
             }
         },
