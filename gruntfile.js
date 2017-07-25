@@ -34,7 +34,8 @@ module.exports = function (grunt) {
                     'content/css/inventario.css': '_desenvolvimento/sass/inventario.scss',
                     'content/css/solucoes.css': '_desenvolvimento/sass/solucoes.scss',
                     'content/css/oquehadenovo.css': '_desenvolvimento/sass/oquehadenovo.scss',
-                    'content/css/fiqueligado.css': '_desenvolvimento/sass/fiqueligado.scss'
+                    'content/css/fiqueligado.css': '_desenvolvimento/sass/fiqueligado.scss',
+                    'content/css/dicas.css': '_desenvolvimento/sass/dicas.scss'
                 }
             }     
         },
@@ -57,7 +58,8 @@ module.exports = function (grunt) {
                     'scripts/views/inventario/inventario.js': ['_desenvolvimento/scripts/views/inventario/inventario.js'],
                     'scripts/views/solucoes/solucoes.js': ['_desenvolvimento/scripts/views/solucoes/solucoes.js'],
                     'scripts/views/oquehadenovo/oquehadenovo.js': ['_desenvolvimento/scripts/views/oquehadenovo/oquehadenovo.js'],
-                    'scripts/views/fiqueligado/fiqueligado.js': ['_desenvolvimento/scripts/views/fiqueligado/fiqueligado.js']
+                    'scripts/views/fiqueligado/fiqueligado.js': ['_desenvolvimento/scripts/views/fiqueligado/fiqueligado.js'],
+                    'scripts/views/dicas/dicas.js': ['_desenvolvimento/scripts/views/dicas/dicas.js']
                 },
             }
         },

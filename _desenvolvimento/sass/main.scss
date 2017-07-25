@@ -13,7 +13,7 @@ body{
         z-index: 10;
         .content-lightbox{
             position: absolute;
-            top: 50%;
+            top: 25%;
             bottom: 50%;
             text-align: center;
             display: block;
@@ -148,11 +148,14 @@ body{
         float: left;
         width: 15%;
         padding: 10px;
-        .component-oque-ha-de-novo, .component-fique-ligado{
+        .component-oque-ha-de-novo, .component-fique-ligado, .component-dicas{
             width: 130px;
             margin-bottom: 10px;
             title{
                 display: block;
+            }
+            picture{
+                cursor: pointer;
             }
         }
     }
@@ -178,3 +181,29 @@ body{
 }
 
 
+
+
+
+
+
+
+
+.content-videos{
+    cursor: pointer;
+}
+
+.content-oquehadenovo-left, .content-fiqueligado-left{
+    width: 70%;
+    vertical-align: top;
+    float: left;
+}
+.content-oquehadenovo-right, .content-fiqueligado-right{
+    width: 20%;
+    float: right;
+}
+
+.content-row-list-dicas, .content-row-list-fiqueligado, .oquehadenovo-slider{
+    ol{
+        display: inline-block;
+    }
+}

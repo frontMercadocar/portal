@@ -343,7 +343,7 @@ body {
     z-index: 10; }
     body .lightbox .content-lightbox {
       position: absolute;
-      top: 50%;
+      top: 25%;
       bottom: 50%;
       text-align: center;
       display: block;
@@ -444,11 +444,13 @@ body {
   float: left;
   width: 15%;
   padding: 10px; }
-  .content-home .content-home-left .component-oque-ha-de-novo, .content-home .content-home-left .component-fique-ligado {
+  .content-home .content-home-left .component-oque-ha-de-novo, .content-home .content-home-left .component-fique-ligado, .content-home .content-home-left .component-dicas {
     width: 130px;
     margin-bottom: 10px; }
-    .content-home .content-home-left .component-oque-ha-de-novo title, .content-home .content-home-left .component-fique-ligado title {
+    .content-home .content-home-left .component-oque-ha-de-novo title, .content-home .content-home-left .component-fique-ligado title, .content-home .content-home-left .component-dicas title {
       display: block; }
+    .content-home .content-home-left .component-oque-ha-de-novo picture, .content-home .content-home-left .component-fique-ligado picture, .content-home .content-home-left .component-dicas picture {
+      cursor: pointer; }
 
 .content-home .content-home-right {
   float: right;
@@ -465,5 +467,20 @@ body {
 
 .content-home .both {
   clear: both; }
+
+.content-videos {
+  cursor: pointer; }
+
+.content-oquehadenovo-left, .content-fiqueligado-left {
+  width: 70%;
+  vertical-align: top;
+  float: left; }
+
+.content-oquehadenovo-right, .content-fiqueligado-right {
+  width: 20%;
+  float: right; }
+
+.content-row-list-dicas ol, .content-row-list-fiqueligado ol, .oquehadenovo-slider ol {
+  display: inline-block; }
 
 /*# sourceMappingURL=main.css.map */

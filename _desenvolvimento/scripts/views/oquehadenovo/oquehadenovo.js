@@ -5,7 +5,7 @@ define(['app'], function (app) {
         
         $scope.textPage = 'O que hé de novo ?';
         
-        //$('.breadcrumb').append('<a href="home">Home</a> / Estoque / Inventário / Contar o Estoque / Normativas')
+        $('.oquehadenovo-slider').slick();
         
                        
     });

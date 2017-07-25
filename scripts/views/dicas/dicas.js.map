@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../../_desenvolvimento/scripts/views/dicas/dicas.js"],"names":["define","app","controller","$scope","$rootScope","textPage","$","slick"],"mappings":"AAAA,YAEAA,SAAQ,OAAQ,SAAUC,KACtBA,IAAIC,WAAW,YAAa,SAAUC,OAAQC,YAE1CD,OAAOE,SAAW,QAElBC,EAAE,iBAAiBC","file":"dicas.js"}

@@ -27,7 +27,7 @@
             <div class="content-lightbox">
                 <div class="content-lightbox-info">
                     <bottom class="close" id="close" onclick="funcoes.metodos.close();">X</bottom>
-                    <p>oi</p>                
+                    <p></p>                
                 </div>            
             </div>
         </div>
@@ -49,11 +49,30 @@
             var funcoes = {};
 
             funcoes.metodos = {
-                lightbox: function(){
+                lightbox_login: function(){
                     $('.lightbox').fadeIn(800);
+
+                    var login =  "<div class='content-login'>";
+                        login +=    "<label>Login";
+                        login +=        "<input type='text' id='nome' />";
+                        login +=    "<label>";
+                        login +=    "<label>Senha";
+                        login +=        "<input type='password' id='senha' />";
+                        login +=    "<label>";
+                        login +=    "<button>Enviar</button>";
+
+
+                    $('.content-lightbox-info p').html(login);
+                },
+                lightbox_dicas: function(e){
+                    var image = e.src;
+                    
+                    $('.lightbox').fadeIn(800);
+                    $('.content-lightbox-info p').html('<a href="dicas"> <img src='+image+' /> </a>');
                 },
                 close: function(){
                     $('.lightbox').fadeOut(800);
+                    $('.content-lightbox-info p').empty();
                 }
             };
         </script>        

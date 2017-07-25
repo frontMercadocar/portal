@@ -1,0 +1,9 @@
+{
+	"version": 3,
+	"file": "dicas.css",
+	"sources": [
+		"../../_desenvolvimento/sass/dicas.scss"
+	],
+	"names": [],
+	"mappings": "AAAA,AACI,uBADmB,CACnB,EAAE,CAAA;EACE,OAAO,EAAE,YAAY,GACxB"
+}

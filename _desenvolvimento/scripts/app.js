@@ -63,6 +63,11 @@ define(['angularAMD', 'angular-route'], function (angularAMD) {
             controller: 'FiqueLigadoCtrl',
             controllerUrl: 'views/fiqueligado/fiqueligado'
         }))
+        .when("/dicas", angularAMD.route({
+            templateUrl: 'views/dicas/index.html', 
+            controller: 'DicasCtrl',
+            controllerUrl: 'views/dicas/dicas'
+        }))
         .otherwise({
             redirectTo: '/home'
         });	
