@@ -396,6 +396,8 @@ body {
       position: absolute;
       top: 40px;
       right: 0px; }
+      body .container-middle .content-header .login-user .sair {
+        cursor: pointer; }
     body .container-middle .content-menu {
       display: block;
       position: relative;
@@ -471,14 +473,22 @@ body {
 .content-videos {
   cursor: pointer; }
 
-.content-oquehadenovo-left, .content-fiqueligado-left {
+.content-oquehadenovo-left, .content-fiqueligado-left, .content-videos-left {
   width: 70%;
   vertical-align: top;
   float: left; }
 
-.content-oquehadenovo-right, .content-fiqueligado-right {
+.content-oquehadenovo-right, .content-fiqueligado-right, .content-videos-right {
   width: 20%;
   float: right; }
+
+.content-videos-right button:first-child {
+  left: 45%;
+  top: 0; }
+
+.content-videos-right button:last-child {
+  left: 45%;
+  bottom: 0; }
 
 .content-row-list-dicas ol, .content-row-list-fiqueligado ol, .oquehadenovo-slider ol {
   display: inline-block; }

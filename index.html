@@ -11,9 +11,9 @@
     </script>
     
     <!-- <link rel="icon" href="favicon.ico"> -->
-    <link rel="stylesheet" href="content/css/main.css" type="text/css" />
+    <!-- <link rel="stylesheet" href="content/css/main.css" type="text/css" />
     <link rel="stylesheet" href="content/css/jquery.bxslider.css" />
-    <link rel="stylesheet" href="content/css/jquery-ui.css" />
+    <link rel="stylesheet" href="content/css/jquery-ui.css" /> -->
     <style>
         
     </style>
@@ -37,16 +37,20 @@
             <div ng-view class="dynamic-content"></div>
         </div>
 
+        <!-- LIBS -->
         <script src="scripts/libs/jquery.min.js"></script>
         <script src="scripts/libs/jquery-ui.js"></script>
-        <script src="scripts/plugin/jquery.bxslider.js"></script>        
-
-        <script src="scripts/header.js"></script> 
-    
+        <!-- PLUGINS -->
+        <script src="scripts/plugin/jquery.bxslider.js"></script> 
+        <script src="scripts/plugin/jquery.cookie.js"></script>       
+        <!-- MAIN -->
+        <script src="scripts/header.js"></script>    
         <script data-main="scripts/main.js" src="scripts/libs/require.js"></script>
         
         <script>
             var funcoes = {};
+            var resultForm = {};
+            var resultFormLogin;
 
             funcoes.metodos = {
                 lightbox_login: function(){
@@ -59,7 +63,8 @@
                         login +=    "<label>Senha";
                         login +=        "<input type='password' id='senha' />";
                         login +=    "<label>";
-                        login +=    "<button>Enviar</button>";
+                        login +=    "<button onclick='resultFormLogin()'>Enviar</button>";
+                        login += "</div>";
 
 
                     $('.content-lightbox-info p').html(login);
@@ -70,11 +75,58 @@
                     $('.lightbox').fadeIn(800);
                     $('.content-lightbox-info p').html('<a href="dicas"> <img src='+image+' /> </a>');
                 },
+                lightbox_email: function(){                    
+                    $('.lightbox').fadeIn(800);
+                    
+                    var emails =  "<div class='content-emails'>";
+                        emails +=    "<label>Nome";
+                        emails +=        "<input type='text' id='nome' />";
+                        emails +=    "<label>";
+                        emails +=    "<label>Email";
+                        emails +=        "<input type='text' id='email' />";
+                        emails +=    "<label>";
+                        emails +=    "<label>Mensagem";
+                        emails +=        "<textarea id='mensagem'> </textarea>";
+                        emails +=    "<label>";
+                        emails +=    "<button onclick='resultFormEmail()'>Enviar</button>";
+                        emails += "</div>";
+
+
+                    $('.content-lightbox-info p').html(emails);
+                },
                 close: function(){
                     $('.lightbox').fadeOut(800);
                     $('.content-lightbox-info p').empty();
                 }
             };
+
+            resultFormLogin = function(){
+                var inputLogin = $('#nome').val();
+                var inputSenha = $('#senha').val();
+
+                if(inputSenha === 'admin'){
+                    $.cookie('nome', inputLogin);
+                    location.reload();
+                    $('.lightbox').fadeOut(800);
+
+                }
+                else{
+                    alert('Login o senha incorreto!')
+                }
+            }
+
+            resultFormEmail = function(){
+                var inputNome     = $('#nome').val();
+                var inputEmail    = $('#email').val();
+                var inputMensagem = $('#mensagem').val();
+
+                if(inputNome != '' && inputEmail != '' && inputMensagem != ''){
+                   alert('Mensagem enviada com sucesso!')
+                }
+                else{
+                    alert('Todos os campos devem ser preenchidos')
+                }
+            }
         </script>        
 
         <script src="http://localhost:35729/livereload.js"></script>

@@ -1,0 +1,9 @@
+{
+	"version": 3,
+	"file": "home.css",
+	"sources": [
+		"../../_desenvolvimento/sass/home.scss"
+	],
+	"names": [],
+	"mappings": ""
+}

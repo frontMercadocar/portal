@@ -1,0 +1,2 @@
+"use strict";define(["app"],function(app){app.controller("VideosCtrl",function($scope,$rootScope){$scope.textPage="Videos",$(".videos-slider").slick(),$(".videos-slider-vertical").slick({infinite:!0,autoplay:!0,speed:500,fade:!0,cssEase:"linear"})})});
+//# sourceMappingURL=videos.js.map
